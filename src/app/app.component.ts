@@ -7,7 +7,7 @@ import { Repo } from "./repository";
     selector: "app-root",
     templateUrl: "app.component.html"
 })
-export class ProductComponent {
+export class AppComponent {
 
 
     constructor(public repo: Repo) { }
