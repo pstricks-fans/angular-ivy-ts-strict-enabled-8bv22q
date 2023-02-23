@@ -1,24 +1,15 @@
-import { Component } from "@angular/core";
-import { Product } from "./product";
-import { Repo } from "./repository";
-
+import { Component } from '@angular/core';
+import { Product } from './product';
+import { Repo } from './repository';
 
 @Component({
-    selector: "app-root",
-    templateUrl: "app.component.html"
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
 })
 export class AppComponent {
+  constructor(public repo: Repo) {}
 
-
-    constructor(public repo: Repo) { }
-
-
-    getProducts(): Product[] {
-        return this.repo.getProducts();
-    }
-
-  
-
-
+  getProducts(): Product[] {
+    return this.repo.getProducts();
+  }
 }
-
