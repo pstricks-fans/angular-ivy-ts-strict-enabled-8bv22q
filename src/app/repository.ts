@@ -7,12 +7,12 @@ export class Repo {
     private products: Product[];
 
     constructor(private dataSource: SimpleDataSource) {
-        this.products = new Array<Product>();
-        this.dataSource.getData().forEach(p => this.products.push(p));
+        this.products = [...this.dataSource.getData()];
     }
 
     getProducts(): Product[] {
-        return this.products;
+        //return this.products;
+        return this.dataSource.getData();
     }
 
    
