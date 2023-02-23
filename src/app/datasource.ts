@@ -15,7 +15,7 @@ export class SimpleDataSource {
     );
     setInterval(() => {
       this.p = this.data.shift()!;
-      this.data.push(p);
+      this.data.push(this.p);
       this.data[0]!.price = this.data[0]!.price! + 1;
     }, 1000);
   }
