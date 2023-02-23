@@ -1,1 +1,16 @@
-test
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *paFor="let item of getProducts()">
+      <td>{{ item.name }}</td>
+      <td>{{ item.category }}</td>
+      <td>{{ item.price }}</td>
+    </tr>
+  </tbody>
+</table>
