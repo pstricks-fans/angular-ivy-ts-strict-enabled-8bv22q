@@ -4,10 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { PaIteratorDirective } from './iterator';
 import { AppComponent } from './app.component';
+import { SimpleDataSource } from './datasource';
+import { Repo } from './repository';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, PaIteratorDirective],
   bootstrap: [AppComponent],
+  providers: [SimpleDataSource, Repo],
 })
 export class AppModule {}
