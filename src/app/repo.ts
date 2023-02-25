@@ -11,9 +11,6 @@ export class Repo {
     }
 
     getProducts(): Product[] {
-        //return this.products;
         return this.dataSource.getData();
-    }
-
-   
+    }   
 }

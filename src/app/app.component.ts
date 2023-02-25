@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SimpleDataSource } from './datasource';
 import { Product } from './product';
-import { Repo } from './repository';
+import { Repo } from './repo';
 
 @Component({
   selector: 'app-root',

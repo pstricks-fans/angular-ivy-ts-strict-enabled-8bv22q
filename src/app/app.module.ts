@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { PaIteratorDirective } from './iterator';
 import { AppComponent } from './app.component';
 import { SimpleDataSource } from './datasource';
-import { Repo } from './repository';
+import { Repo } from './repo';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
