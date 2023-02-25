@@ -31,7 +31,7 @@ export class PaIteratorDirective implements OnInit, OnChanges, DoCheck {
 
   ngDoCheck(): void {
     console.log("ngDoCheck");
-    this.update();
+    this.smartUpdate();
   }
 
 
