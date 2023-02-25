@@ -45,17 +45,21 @@ export class PaIteratorDirective implements OnInit, OnChanges, DoCheck {
   ngDoCheck(): void {
     console.log('ngDoCheck');
     
-    
-    
+    // Please activate one of the following methods to understand what I want to achieve.
+
+    // ---------------- SMART UPDATE ---------------- 
     // This smartUpdate() is expected to produce 5 rotating rows
     // and the DOM objects are kept rather than being destroyed and recreated. 
     // Unfortunately, the current implementation failed to do so.
-    this.smartUpdate();
-
-
+    
+    // this.smartUpdate();
+    
+    
+    // ---------------- STUPID UPDATE ---------------- 
     // This update successfully produce 5 rotating rows but
     // it fails to avoid the DOM objects from being destroyed and recreated.
-    //this.update();
+    
+    this.update();
   
   }
 
