@@ -45,7 +45,7 @@ export class PaIteratorDirective implements OnInit, OnChanges, DoCheck {
   ngDoCheck(): void {
     console.log('ngDoCheck');
     // this.smartUpdate();
-    this.update();
+    this.update();// this update() does destroy and recreate DOM objects that I want to void.
   }
 
   private update() {
