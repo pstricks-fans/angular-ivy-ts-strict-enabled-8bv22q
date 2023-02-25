@@ -56,7 +56,7 @@ export class PaIteratorDirective implements OnInit, OnChanges, DoCheck {
     
     
     // ---------------- STUPID UPDATE ---------------- 
-    // This update successfully produce 5 rotating rows but
+    // This update successfully produces 5 rotating rows but
     // it fails to avoid the DOM objects from being destroyed and recreated.
     
     this.update();
