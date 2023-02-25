@@ -4,11 +4,8 @@ import { Product } from "./product";
 
 @Injectable()
 export class Repo {
-    private products: Product[];
 
-    constructor(private dataSource: SimpleDataSource) {
-        this.products = [...this.dataSource.getData()];
-    }
+    constructor(private dataSource: SimpleDataSource) {}
 
     getProducts(): Product[] {
         return this.dataSource.getData();

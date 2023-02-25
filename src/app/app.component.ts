@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SimpleDataSource } from './datasource';
 import { Product } from './product';
 import { Repo } from './repo';
 
@@ -8,10 +7,11 @@ import { Repo } from './repo';
   templateUrl: 'app.component.html',
 })
 export class AppComponent {
-  constructor(public repo: Repo, public ds: SimpleDataSource) {}
+  constructor(public repo: Repo) {}
 
   getProducts(): Product[] {
     return this.repo.getProducts();
-    //return this.ds.getData();
   }
+
+  getKey(id: number, product: Product) { return product.id; }
 }

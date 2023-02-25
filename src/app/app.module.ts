@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { PaIteratorDirective } from './iterator';
+import { PaIteratorDirective } from './iterator.directive';
 import { AppComponent } from './app.component';
 import { SimpleDataSource } from './datasource';
 import { Repo } from './repo';

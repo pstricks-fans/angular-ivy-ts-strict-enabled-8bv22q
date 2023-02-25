@@ -7,7 +7,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *paFor="let item of getProducts()">
+    <tr *paFor="let item of getProducts();trackBy:getKey">
       <td>{{ item.name }}</td>
       <td>{{ item.category }}</td>
       <td>{{ item.price }}</td>
