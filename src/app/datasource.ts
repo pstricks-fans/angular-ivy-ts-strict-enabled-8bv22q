@@ -13,6 +13,8 @@ export class SimpleDataSource {
       new Product(4, 'Corner Flags', 'Soccer', 34.95),
       new Product(5, 'Thinking Cap', 'Chess', 16)
     );
+
+    // simulating dynamically changed data, hahaha!
     setInterval(() => {
       this.p = this.data.shift()!;
       this.data.push(this.p);
