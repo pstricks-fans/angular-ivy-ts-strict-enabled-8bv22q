@@ -58,6 +58,7 @@ export class PaIteratorDirective implements OnInit, OnChanges, DoCheck {
 
     changes.forEachMovedItem((record) => {
        // TODO      
+       // rearrange the existing embedded views based on their current position.
     });
   }
 
