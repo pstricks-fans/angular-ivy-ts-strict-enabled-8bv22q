@@ -17,7 +17,7 @@ export class SimpleDataSource {
       this.p = this.data.shift()!;
       this.data.push(this.p);
       this.data[0]!.price = this.data[0]!.price! + 1;
-    }, 1000);
+    }, 3000);
   }
 
   getData(): Product[] {
